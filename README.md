@@ -1,4 +1,4 @@
-# Restaurant Review Portal - Frontend
+# Restaurant Review Portal - Frontend - Group 3
 
 Frontend application for the **Restaurant Review Portal**, developed as part of the MSc group project.
 
