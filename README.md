@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Restaurant Review Portal - Frontend
+
+Frontend application for the **Restaurant Review Portal**, developed as part of the MSc group project.
+
+The application allows users to browse restaurants, view restaurant information, read reviews, submit reviews, and interact with other features provided by the Restaurant Review Portal.
+
+## Technology Stack
+
+* React
+* Next.js
+* TypeScript
+* CSS/Tailwind
+* Node.js / npm
+
+## Prerequisites
+
+Before running the project, make sure the following are installed:
+
+* Node.js
+* npm
+* Git
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/<YOUR-GITHUB-USERNAME>/restaurant-review-portal-frontend.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd restaurant-review-portal-frontend
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```text
+src/
+├── app/
+├── components/
+│   ├── common/
+│   ├── layout/
+│   └── ui/
+├── features/
+│   ├── auth/
+│   ├── restaurants/
+│   ├── reviews/
+│   └── users/
+├── hooks/
+├── services/
+├── types/
+├── utils/
+├── constants/
+└── styles/
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Main Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The planned frontend features include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* User registration and login
+* Restaurant browsing
+* Restaurant search and filtering
+* Restaurant details
+* Restaurant ratings
+* View customer reviews
+* Submit restaurant reviews
+* User profile management
+* Responsive user interface
+* Integration with the Restaurant Review Portal backend API
 
-## Deploy on Vercel
+## Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run the development environment:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev
+```
+
+Build the application:
+
+```bash
+npm run build
+```
+
+Run the production build:
+
+```bash
+npm start
+```
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+## Environment Variables
+
+Environment-specific configuration should be stored in a local `.env` file.
+
+Example:
+
+```env
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
+```
+
+Do not commit `.env` files containing sensitive or environment-specific information to GitHub.
+
+## Backend Integration
+
+The frontend communicates with the Restaurant Review Portal backend through REST APIs.
+
+Local backend example:
+
+```text
+http://localhost:5000/api
+```
+
+## Git Workflow
+
+Developers should create separate branches for features or tasks.
+
+Example:
+
+```bash
+git checkout -b feature/restaurant-list
+```
+
+After completing a feature:
+
+```bash
+git add .
+git commit -m "Add restaurant listing feature"
+git push origin feature/restaurant-list
+```
+
+Changes should be reviewed before being merged into the `main` branch.
+
+## Project Status
+
+This project is currently under development as part of an MSc group assignment.
+
+## Team
+
+Developed by the Restaurant Review Portal project team.
+
+## License
+
+This project is developed for academic purposes.
